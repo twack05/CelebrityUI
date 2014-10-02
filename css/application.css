@@ -11,14 +11,20 @@ form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10p
 
 /* Put your styles here */
 .card {
+  position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 210px;
   border: 1.5px solid #d8d8d8;
   margin: 10px 10px 10px 10px;
 }
 
-.card img {
-  width: 60px;
+.card:hover .close {
+  display: block;
+}
+
+.photo {
+  width: 75px;
   height: 75px;
   float: left;
   border-right: 1.5px solid #d8d8d8;
@@ -31,3 +37,14 @@ form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10p
   font-size: 13px;
   font-color: #333333;
 }
+
+.close {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
+
