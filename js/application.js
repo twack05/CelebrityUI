@@ -9,3 +9,21 @@ data = [
   { name: "Patrick Duffy", photo_url: "img/avatars/pduff.png" },
   { name: "Arnold Schwartzengger", photo_url: "img/avatars/arnold.png" }
 ];
+
+function addCelebCards() {
+  var celebCards = "";
+  for (var i = 0, length = data.length; i < length; i++) {
+    currentCeleb = data[i];
+    // If card has no image, set to default image
+    if (currentCeleb.photo_url == ""){
+      currentCeleb.photo_url = "img/default.png";
+    }
+    celebCards += "<div class='card'><img src='"+currentCeleb.photo_url+"'></img><h3>"+
+                    currentCeleb.name+"</h3></div>";
+  }
+  $('#celeb-content').html(celebCards);
+};
+
+$(document).ready(function(){
+  addCelebCards();
+});

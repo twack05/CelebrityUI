@@ -10,3 +10,24 @@ form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10p
 /* Card font: 13px and #333333 */
 
 /* Put your styles here */
+.card {
+  display: inline-block;
+  width: 210px;
+  border: 1.5px solid #d8d8d8;
+  margin: 10px 10px 10px 10px;
+}
+
+.card img {
+  width: 60px;
+  height: 75px;
+  float: left;
+  border-right: 1.5px solid #d8d8d8;
+  margin-right: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.card h3 {
+  text-align: left;
+  font-size: 13px;
+  font-color: #333333;
+}
